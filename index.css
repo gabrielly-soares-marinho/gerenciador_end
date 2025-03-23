@@ -1,3 +1,4 @@
+/* CSS Pagina Home */
 *{
     box-sizing: border-box;
     margin: 0;
@@ -31,7 +32,7 @@ li a{
     color: black;
 }
 
-header .container{
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,15 +40,51 @@ header .container{
 
 h1{
     font-size: 30px;
+    margin-bottom: 15px;
 }
 
-.cadastro{
-    max-width: 1600px;
+/* CSS Pagina Cadastro / Login */
+
+.cadastro {
+    padding: 20px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+form {
     width: 100%;
-    margin: 50px auto;  
+    display: flex;
+    flex-direction: column;
 }
 
-input{
-    display: block;
-    margin-bottom: 10px;
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #FF69B4;
+    color: white;
+    border: none;
+    margin-top: 10px;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.usuario-perfil{
+    width: 35px;
+}
+

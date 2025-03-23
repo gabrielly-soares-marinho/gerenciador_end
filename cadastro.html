@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
 
+
 </head>
 <body>
    <header>
@@ -25,7 +26,7 @@
                 <a href="sobre.html">Sobre a loja</a>   
             </li>
             <li>
-                <a href="cadastro.html">Cadastro</a>
+                <a href="cadastro.html"><img class="usuario-perfil" src="imagens/usuario-de-perfil.png" alt="perfil"></a>
             </li>
            </ul> 
         </nav>
@@ -33,15 +34,21 @@
    </header> 
    <div class="cadastro">
     <h2>Cadastro</h2>
-    <form>
+    <form id="cadastro">
         <input id="name" type="text" placeholder="Nome" required>
         <input id="email" type="email" placeholder="E-mail" required>
         <input id="password" type="password" placeholder="Senha" required>
         <input id="cpf" type="text" placeholder="CPF" required>
         <input id="data" type="date" placeholder="Data de nascimento" required>
-        <button onclick="save()" type="submit">Confirmar</button>
+        <button type="submit">Confirmar</button>
+    </form>
+    <h2>Login</h2>
+    <form id="login">
+        <input id="email-login" type="email" placeholder="E-mail" required>
+        <input id="password-login" type="password" placeholder="Senha" required>
+        <button type="submit">Confirmar</button>
     </form>
    </div>
-
+<script src="cadastro.js"></script>
 </body>
 </html>

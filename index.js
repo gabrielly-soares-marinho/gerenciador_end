@@ -1,15 +1,11 @@
-
-
-
-
 async function save(){
-    let name = "Gabrielly";
-    let email = "aurelina8075@uorak.com"
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
     let usertype = 1;
-    let password = "123456";
+    let password = document.getElementById("password").value;
     let termos = 1;
-    let birthday = "2005-03-05";
-    let cpfcnpj = "82577497024"
+    let birthday = document.getElementById("data").value;
+    let cpfcnpj = document.getElementById("cpf").value;
 
 dados = {       
     "name": name,
@@ -39,4 +35,3 @@ dados = {
     console.log(responseErro);
 }
 
-save()
