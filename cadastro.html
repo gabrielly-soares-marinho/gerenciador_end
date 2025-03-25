@@ -23,7 +23,7 @@
                 <a href="home.html">Home</a>
             </li>
             <li>
-                <a href="sobre.html">Sobre a loja</a>   
+                <a href="sobre.html">Sobre Nós</a>   
             </li>
             <li>
                 <a href="cadastro.html"><img class="usuario-perfil" src="imagens/usuario-de-perfil.png" alt="perfil"></a>
@@ -33,45 +33,20 @@
     </div>
    </header> 
    <div class="cadastro">
-    <h2>Cadastro</h2>
+    <h2 class="title-cadastro">Cadastro</h2>
     <form id="cadastro">
         <input id="name" type="text" placeholder="Nome" required>
         <input id="email" type="email" placeholder="E-mail" required>
         <input id="password" type="password" placeholder="Senha" required>
         <input id="cpf" type="text" placeholder="CPF" required>
         <input id="data" type="date" placeholder="Data de nascimento" required>
-        <button type="submit" style="border-radius: 9px; padding: 10px 20px;">Confirmar</button>
+        <button type="submit">Confirmar</button>
     </form>
-    <h2>Login</h2>
+    <h2 class="title-cadastro">Login</h2>
     <form id="login">
         <input id="email-login" type="email" placeholder="E-mail" required>
         <input id="password-login" type="password" placeholder="Senha" required>
-        <button type="submit" style="border-radius: 9px; padding: 10px 20px;"
-        >Confirmar</button> 
-
-</form>
-
-<style>
-    /* Estilo normal do botão */
-    button {
-        border-radius: 12px;
-        padding: 10px 20px;
-        background-color: #FF69B4;
-        color: white;
-        border: 2px solid #FF69B4;
-        font-size: 16px;
-        cursor: pointer;
-        transition: transform 0.1s ease; /* Suaviza a animação do efeito */
-    }
-
-    /* Efeito quando o botão for clicado (afunda) */
-    button:active {
-        transform: scale(0.95); /* Faz o botão encolher um pouco para simular que foi pressionado */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Dá a impressão de profundidade */
-    }
-</style>
-        
-
+        <button type="submit">Confirmar</button>
     </form>
    </div>
 <script src="cadastro.js"></script>

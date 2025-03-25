@@ -10,7 +10,7 @@ body{
     background-color:#FFF0F5;
 }
 
-.container {
+.container{
     max-width: 1600px;
     width: 100%;
     margin: 0 auto;
@@ -38,6 +38,11 @@ header .container {
     align-items: center;
 }
 
+.usuario-perfil{
+    width: 35px;
+    vertical-align: middle;
+}
+
 h1{
     font-size: 30px;
     margin-bottom: 15px;
@@ -45,7 +50,7 @@ h1{
 
 /* CSS Pagina Cadastro / Login */
 
-.cadastro {
+.cadastro{
     padding: 20px;
     width: 300px;
     position: absolute;
@@ -71,20 +76,54 @@ input {
 
 button {
     width: 100%;
-    padding: 10px;
     background: #FF69B4;
     color: white;
     border: none;
     margin-top: 10px;
+    border-radius: 12px;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.1s ease
 }
 
-h2{
+button:active {
+    transform: scale(0.95); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.title-cadastro{
     text-align: center;
     margin-bottom: 10px;
     margin-top: 20px;
 }
 
-.usuario-perfil{
-    width: 35px;
+
+/* CSS Pagina Sobre a Loja */
+
+.sobre {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    margin: 50px auto;
 }
 
+.img-perfume {
+    width: 600px; 
+    height: auto;
+    margin-right: 25px;
+}
+
+
+.paragrafo-sobre{
+    text-align: justify;
+    font-size: 14px;
+    width: 550px; 
+}
+
+.title-sobre{
+    margin-bottom: 10px;
+}
