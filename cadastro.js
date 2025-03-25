@@ -28,12 +28,25 @@ document.getElementById("cadastro").addEventListener("submit", async function(ev
                 }
             }
         );
+        if (api.ok){
+            save ()
+        } else{
+            let responseErro = await api.json();
+            console.error("Erro no cadastro:", responseErro);
+            alert("Erro ao cadastrar. Tente novamente.");
+        }
     } 
-    catch {
-        responseErro = await api.json()
+    catch (error){
+        console.error("error: ", error)
+       
     }
 
 });
+
+function save() {
+    alert("Cadastro realizado com sucesso! Por favor faça o seu login :)")
+}
+
 
 document.getElementById("login").addEventListener("submit", async function(event) {
     event.preventDefault();
@@ -44,8 +57,8 @@ document.getElementById("login").addEventListener("submit", async function(event
 
     dados = {       
         "email": email,
-        "user_type_id": usertype,
         "password": password,
+        "user_type_id": usertype,
     }
     try {
         let api = await fetch(
@@ -58,9 +71,18 @@ document.getElementById("login").addEventListener("submit", async function(event
             }
         );
         const result = await api.json();
+
+        if (api.ok){
+            window.location.href = "home.html";
+        }
+        
     } 
     catch (error){
         console.error("error: ", error)
     }
+   
+     
 
 });
+
+
