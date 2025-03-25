@@ -47,7 +47,7 @@ function save() {
     alert("Cadastro realizado com sucesso! Por favor faça o seu login :)")
 }
 
-
+/* area de login do usuario */
 document.getElementById("login").addEventListener("submit", async function(event) {
     event.preventDefault();
 
@@ -72,6 +72,7 @@ document.getElementById("login").addEventListener("submit", async function(event
         );
         const result = await api.json();
 
+        /* Para dar certo precisamos ativar o email que criamos */
         if (api.ok){
             window.location.href = "home.html";
         }
