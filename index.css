@@ -18,7 +18,7 @@ body{
 
 header{
     padding: 30px 0;
-    background-color: #FF69B4;
+    background-color: #e383f7;
 }
 
 li{
@@ -29,7 +29,7 @@ li{
 
 li a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 header .container {
@@ -46,6 +46,13 @@ header .container {
 h1{
     font-size: 30px;
     margin-bottom: 15px;
+}
+
+.img-perfume{
+    display: flex;
+    padding: 30px;
+    margin: 90px auto;
+
 }
 
 /* CSS Pagina Cadastro / Login */
@@ -111,7 +118,15 @@ button:active {
     margin: 50px auto;
 }
 
-.img-perfume {
+.redes-sociais{
+    width: 30px; 
+    height: auto;
+    margin-right: 20px;
+
+
+}
+
+.img-loja {
     width: 600px; 
     height: auto;
     margin-right: 25px;
