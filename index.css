@@ -6,8 +6,9 @@
     font-family: "Manrope", sans-serif;
 }
 
-body{
+.fundo-color{
     background-color:#f7eef1;
+    height: 100vh;
 }
 
 .container{
@@ -48,14 +49,44 @@ h1{
     margin-bottom: 15px;
 }
 
-.img-perfume{
-    display: flex;
-    padding: 30px;
-    margin: 90px auto;
-
+.title-desconto{
+    margin-top: 15px;
+    text-align: center;
 }
 
-/* CSS Pagina Cadastro / Login */
+.section-perfumes{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card-perfumes{
+    margin-right: 20px;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+.div-perfume{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    
+}
+
+.img-perfume{
+    width: 300px;
+}
+
+/* CSS Pagina Cadastro */
+.fundo-cadastro {
+    background-image: url('imagens/cadastro.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100vw;
+}
 
 .cadastro{
     padding: 20px;
@@ -65,10 +96,6 @@ h1{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-body {
-    background-image: url("paper.gif");
-}
-
 
 form {
     width: 100%;
@@ -109,12 +136,7 @@ button:active {
     margin-top: 20px;
 }
 
-.img-logo{
-    width: 100%;
-    margin-right: 25px;
    
-}
-
 /* CSS Pagina Sobre a Loja */
 
 .sobre {
@@ -143,7 +165,6 @@ button:active {
     height: auto;
     margin-right: 25px;
 }
-
 
 .paragrafo-sobre{
     text-align: justify;

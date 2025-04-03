@@ -33,7 +33,7 @@ document.getElementById("cadastro").addEventListener("submit", async function(ev
         } else{
             let responseErro = await api.json();
             console.error("Erro no cadastro:", responseErro);
-            alert("Erro ao cadastrar. Tente novamente.");
+            alert("Usuário já existente. Tente novamente.");
         }
     } 
     catch (error){
