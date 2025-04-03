@@ -1,10 +1,10 @@
-document.getElementById("cadastro").addEventListener("submit", async function(event) {
+document.getElementById("cadastro").addEventListener("submit", async function(event) { /*ele seleciona pelos id para enviar, pega itens do formulario*/ 
     event.preventDefault(); 
     await save();
 });
 
 async function save() {
-    try {
+    try { /*trata erros*/
         let name = document.getElementById("name").value;
         let email = document.getElementById("email").value;
         let usertype = 1;
@@ -32,12 +32,12 @@ async function save() {
         let result = await api.json();
 
         if (api.ok) {
-            console.log("Cadastro realizado com sucesso!", result);
+            alert("Cadastro realizado com sucesso!", result);
         } else {
-            console.error("Erro ao cadastrar:", result);
+            alert("Erro ao cadastrar:", result);
         }
 
     } catch (error) {
-        console.error("Erro inesperado:", error);
+        alert("Erro inesperado:", error);
     }
 }

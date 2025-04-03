@@ -1,7 +1,8 @@
 /* CSS Pagina Home */
+/*utilizado em todas as paginas*/
 *{
     box-sizing: border-box;
-    margin: 0;
+    margin: 0;                         
     padding: 0;
     font-family:  "Cinzel", serif;
 }
@@ -36,8 +37,8 @@ li a{
 
 header .container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between;  /*colado na borda esquerda e direita*/
+    align-items: center; 
 }
 
 .usuario-perfil{
@@ -52,7 +53,7 @@ h1{
 
 .title-desconto{
     margin-top: 15px;
-    text-align: center;
+    text-align: center;  /*alinha os textos*/
 }
 
 .section-perfumes{
@@ -82,8 +83,8 @@ h1{
 /* CSS Pagina Cadastro */
 .fundo-cadastro {
     background-image: url('imagens/cadastro.png');
-    background-size: cover;
-    background-position: center;
+    background-size: cover;  /*controla o tamanho da imagem de fundo*/
+    background-position: center;  /*controla o posicionamento da imagem de fundo dentro do elemento*/
     background-repeat: no-repeat;
     min-height: 100vh;
     width: 100vw;
@@ -92,15 +93,15 @@ h1{
 .cadastro{
     padding: 20px;
     width: 400px;
-    position: absolute;
-    top: 50%;
+    position: absolute;  /*posição do elemento*/
+    top: 50%;  /*define a distancia do topo do elemento*/
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);   /*mover ou dimensionar*/
 }
 
 form {
     width: 100%;
-    display: flex;
+    display: flex; /*como o elemento deve ser posicionado*/
     flex-direction: column;
 }
 
