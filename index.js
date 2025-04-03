@@ -1,5 +1,5 @@
 document.getElementById("cadastro").addEventListener("submit", async function(event) { /*ele seleciona pelos id para enviar, pega itens do formulario*/ 
-    event.preventDefault(); 
+    event.preventDefault(); /*trava de regarregar*/
     await save();
 });
 
