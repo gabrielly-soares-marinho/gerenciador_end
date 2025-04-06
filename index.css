@@ -46,9 +46,12 @@ header .container {
     vertical-align: middle;
 }
 
-h1{
-    font-size: 30px;
-    margin-bottom: 15px;
+
+
+
+.logo{
+    display:flex;
+    align-items: center;
 }
 
 .title-desconto{
@@ -60,12 +63,19 @@ h1{
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+    
+   
 }
 
 .card-perfumes{
     margin-right: 20px;
     padding: 40px;
     border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: translateY(-10px); /* faz "subir" */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* sombra suave */
+   
+    
 }
 
 .div-perfume{
@@ -73,6 +83,7 @@ h1{
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
+    
     
 }
 
@@ -88,6 +99,7 @@ h1{
     background-repeat: no-repeat;
     min-height: 100vh;
     width: 100vw;
+ 
 }
 
 .cadastro{
@@ -137,6 +149,14 @@ button:active {  /*efeito de pressionado*/
     margin-bottom: 10px;
     margin-top: 20px;
 }
+
+.termo-priv{
+    display: flex;
+    width: 30px;
+    padding: 5px;
+    gap: 8px;
+    white-space: nowrap;
+ }
 
    
 /* CSS Pagina Sobre a Loja */

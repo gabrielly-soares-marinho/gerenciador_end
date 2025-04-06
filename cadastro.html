@@ -15,7 +15,10 @@
    <div class="fundo-cadastro">
    <header>
     <div class="container">
-        <h1>Maison des Parfums</h1>
+        <div class="logo">
+            <img src="imagens/logo.png" alt="logo">
+            <h1>Maison des Parfums</h1>
+        </div>
         <nav>
            <ul>
             <li>
@@ -36,10 +39,14 @@
     <form id="cadastro">
         <input id="name" type="text" placeholder="Nome" required>
         <input id="email" type="email" placeholder="E-mail" required>
-        <input id="password" type="password" placeholder="Senha" required>
         <input id="cpf" type="text" placeholder="CPF" required>
         <input id="data" type="date" placeholder="Data de nascimento" required>
+        <input id="password" type="password" placeholder="Senha" required>
+    <div class="termo-priv">
+        <input id="termos" type="checkbox" required> <p>Termos de privacidade</p>
+    </div>
         <button type="submit">Confirmar</button>
+    </form>
    </div>
 </div>
 </body>
