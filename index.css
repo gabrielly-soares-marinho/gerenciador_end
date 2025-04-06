@@ -20,6 +20,10 @@
 
 header{
     padding: 30px 0;
+}
+
+.menu{ 
+    padding: 30px 0;
     background-color: rgba(202, 56, 238, 0.2);
 }
 
