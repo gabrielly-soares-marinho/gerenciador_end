@@ -1,5 +1,5 @@
-document.getElementById("cadastro").addEventListener("submit", async function(event) { /ele seleciona pelos id para enviar, pega itens do formulario/ 
-    event.preventDefault(); /trava de regarregar/
+document.getElementById("cadastro").addEventListener("submit", async function(event) { 
+    event.preventDefault(); 
     await save();
 });
 
@@ -14,19 +14,13 @@ async function save() {
         let cpfcnpj = document.getElementById("cpf").value;
         
 
-       function terms(){
-        if (termos == 'on'){
-            return 1
-        }
-       }
-
         let dados = {       
             "name": name,
             "email": email,
             "user_type_id": usertype,
             "password": password,
             "cpf_cnpj": cpfcnpj,
-            "terms": terms(),
+            "terms": termos ? 1 : 0,
             "birthday": birthday
         };
 
@@ -40,8 +34,9 @@ async function save() {
 
         if (api.ok) {
             alert("Cadastro realizado com sucesso!", result);
+            console.log(result);
         } else {
-            alert("Erro ao cadastrar:", result);
+            alert("Erro ao cadastrar: " + JSON.stringify(result));
             console.error(result)
         }
 
