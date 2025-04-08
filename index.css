@@ -1,7 +1,5 @@
-/* CSS Pagina Home */
-/*utilizado em todas as paginas*/
 *{
-    box-sizing: border-box; /*inclui as bordas*/
+    box-sizing: border-box; 
     margin: 0;                         
     padding: 0;
     font-family:  "Cinzel", serif;
@@ -41,7 +39,7 @@ li a{
 
 header .container {
     display: flex;
-    justify-content: space-between;  /*colado na borda esquerda e direita*/
+    justify-content: space-between;  
     align-items: center; 
 }
 
@@ -51,8 +49,6 @@ header .container {
 }
 
 
-
-
 .logo{
     display:flex;
     align-items: center;
@@ -60,15 +56,13 @@ header .container {
 
 .title-desconto{
     margin-top: 15px;
-    text-align: center;  /*alinha os textos*/
+    text-align: center;  
 }
 
 .section-perfumes{
     max-width: 1200px;
     width: 100%;
-    margin: 0 auto;
-    
-   
+    margin: 0 auto;  
 }
 
 .card-perfumes{
@@ -76,48 +70,43 @@ header .container {
     padding: 40px;
     border-radius: 5px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform: translateY(-10px); /* faz "subir" */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* sombra suave */
-   
-    
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);    
 }
 
 .div-perfume{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
-    
-    
+    margin-top: 20px;   
 }
 
 .img-perfume{
     width: 300px;
 }
 
-/* CSS Pagina Cadastro */
+
 .fundo-cadastro {
     background-image: url('imagens/cadastro.png');
-    background-size: cover;  /*controla o tamanho da imagem de fundo*/
-    background-position: center;  /*controla o posicionamento da imagem de fundo dentro do elemento*/
+    background-size: cover;  
+    background-position: center;  
     background-repeat: no-repeat;
     min-height: 100vh;
     width: 100vw;
- 
 }
 
 .cadastro{
     padding: 20px;
     width: 400px;
-    position: absolute;  /*posição do elemento*/
-    top: 50%;  /*define a distancia do topo do elemento*/
+    position: absolute;  
+    top: 50%;  
     left: 50%;
-    transform: translate(-50%, -50%);   /*mover ou dimensionar*/
-}
+    transform: translate(-50%, -50%);
+} 
 
 form {
     width: 100%;
-    display: flex; /*como o elemento deve ser posicionado*/
+    display: flex; 
     flex-direction: column;
 }
 
@@ -143,7 +132,7 @@ button {
     transition: transform 0.1s ease
 }
 
-button:active {  /*efeito de pressionado*/
+button:active {  
     transform: scale(0.95); 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -162,8 +151,6 @@ button:active {  /*efeito de pressionado*/
     white-space: nowrap;
  }
 
-   
-/* CSS Pagina Sobre a Loja */
 
 .sobre {
     display: flex;
@@ -207,8 +194,7 @@ button:active {  /*efeito de pressionado*/
 .title-sobre{
     margin-bottom: 10px;
 }
-   
-/* CSS Rodape Loja */
+
 
 footer{
     height: 100px;
@@ -222,8 +208,7 @@ footer{
     display: flex;
     margin: 0px auto;
     justify-content: space-between;
-    align-items: center;
-    
+    align-items: center;   
 }
 
 .redes-sociais{

@@ -4,7 +4,7 @@ document.getElementById("cadastro").addEventListener("submit", async function(ev
 });
 
 async function save() {
-    try { /trata erros/
+    try { 
         let name = document.getElementById("name").value;
         let email = document.getElementById("email").value;
         let usertype = 1;
@@ -12,7 +12,6 @@ async function save() {
         let termos = document.getElementById("termos").checked;
         let birthday = document.getElementById("data").value;
         let cpfcnpj = document.getElementById("cpf").value;
-        
 
         let dados = {       
             "name": name,
@@ -24,7 +23,7 @@ async function save() {
             "birthday": birthday
         };
 
-        let api = await fetch("https://go-wash-api.onrender.com/api/user",{
+        let api = await fetch("https://go-wash-api.onrender.com/api/user", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(dados)
@@ -33,14 +32,12 @@ async function save() {
         let result = await api.json();
 
         if (api.ok) {
-            alert("Cadastro realizado com sucesso!", result);
-            console.log(result);
+            alert("Cadastro realizado com sucesso!");
         } else {
-            alert("Erro ao cadastrar: " + JSON.stringify(result));
-            console.error(result)
+            alert(result.message || "Usuario ja cadastrado!");
         }
 
     } catch (error) {
-        alert("Erro inesperado:", error);
+        alert("Erro inesperado: " + error);
     }
 }
