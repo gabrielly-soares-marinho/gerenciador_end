@@ -104,6 +104,16 @@ header .container {
     transform: translate(-50%, -50%);
 } 
 
+.login{
+    padding: 20px;
+    width: 400px;
+    position: absolute;  
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+
 form {
     width: 100%;
     display: flex; 
