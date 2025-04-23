@@ -3,9 +3,6 @@ document.getElementById("cadastro").addEventListener("submit", async function(ev
     await save();
 });
 
-//capturar informação
-let user = JSON.parse("user")
-console.log(user)
 
 async function save() {
     try { 
